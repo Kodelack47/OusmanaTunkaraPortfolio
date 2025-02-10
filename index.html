@@ -1,82 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ousmana Tunkara - Software Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ousmana Tunkara - Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="intro">
-            <h1>Welcome to My Portfolio!</h1>
-            <p>I'm Ousmana Tunkara, a passionate software engineer focused on creating innovative solutions through technology.</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm a software engineer with experience in both frontend and backend development, UI/UX design, and project management.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Ousmana Tunkara</h1>
+      </div>
+      <nav class="nav">
         <ul>
-            <li>Frontend Development (HTML, CSS, JavaScript)</li>
-            <li>Backend Development (Node.js, Python)</li>
-            <li>Database Management (SQL, MongoDB)</li>
-            <li>UI/UX Design (Figma, Adobe XD)</li>
-            <li>Project Management (Agile, Scrum)</li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <!-- NEW: Resume nav item -->
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <!-- Existing Services nav item -->
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Project Description</p>
-                <a href="https://project-link.com" target="_blank">View Project</a>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Project Description</p>
-                <a href="https://project-link.com" target="_blank">View Project</a>
-            </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: ousman@example.com</p>
+  <!-- Hero Section -->
+  <section id="home" class="home">
+    <div class="hero-content">
+      <h2 class="typed"></h2>
+      <p>
+        Welcome to my digital portfolio. I build innovative solutions that transform ideas into reality.
+      </p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a versatile software engineer experienced in frontend &amp; backend development, UI/UX design, and project management. My passion is creating scalable, innovative digital solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend: HTML, CSS, JavaScript</li>
+        <li>Backend: Node.js, Python</li>
+        <li>Databases: SQL, MongoDB</li>
+        <li>Design: Figma, Adobe XD</li>
+        <li>Management: Agile, Scrum</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>
+            A cutting-edge web application designed to deliver an amazing user experience.
+          </p>
+          <a href="#" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>
+            A mobile app that revolutionizes how people connect and interact.
+          </p>
+          <a href="#" class="btn" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW: Resume Section -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <h2>Resume</h2>
+      <!-- Summary -->
+      <div class="resume-summary">
+        <h3>Summary</h3>
+        <p>
+          Dynamic Marketing Specialist with over 3 years of experience in driving digital marketing strategies and enhancing online presence. Proven track record of increasing website traffic by 10% and lead generation by 20% through effective SEO and advertising strategies. Skilled in client relationship management, data analysis, and cross-functional collaboration.
+        </p>
+      </div>
+      <!-- Professional Experience -->
+      <div class="resume-experience">
+        <h3>Professional Experience</h3>
+        <div class="experience-item">
+          <h4>Application Developer | Year Up, New York, NY</h4>
+          <span>February 2023 - February 2024</span>
+          <ul>
+            <li>Implemented JavaScript/Java, Bootstrap, Flex Box, HTML, CSS, and Git/GitHub in live projects and demos (400+ hours of training).</li>
+            <li>Employed SQL for efficient data management, leading to improved database performance.</li>
+            <li>Developed basic software programs with unit testing to ensure code quality.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Account Executive | Solve NYC, New York, NY</h4>
+          <span>December 2023 - February 2024</span>
+          <ul>
+            <li>Utilized a consultative sales approach, increasing new client acquisitions by 30%.</li>
+            <li>Presented customized business solutions to improve operational efficiencies.</li>
+            <li>Managed all aspects of the sales process, achieving high quarterly success.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Administrative Assistant | International Center Of Photography, New York, NY</h4>
+          <span>September 2022 - January 2024</span>
+          <ul>
+            <li>Managed correspondence and implemented an improved filing system, reducing retrieval time by 50%.</li>
+            <li>Provided exceptional customer service with a 95% satisfaction rate.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Digital Marketing Specialist | Facebook/Instagram, New York, NY</h4>
+          <span>October 2022 - June 2023</span>
+          <ul>
+            <li>Developed SEO strategies and advertising campaigns, boosting website traffic by 10% and lead generation by 20%.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Freelance Web Developer | Upwork/Fiverr, New York, NY</h4>
+          <span>October 2022 - June 2023</span>
+          <ul>
+            <li>Crafted visually stunning and functional websites tailored to client needs.</li>
+            <li>Improved site performance by 25% through robust code in HTML, CSS, and JavaScript.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Education -->
+      <div class="resume-education">
+        <h3>Education</h3>
+        <div class="education-item">
+          <h4>Manhattan College | New York, NY</h4>
+          <p>Associate of Applied Science in Accounting and Finance, Class of 2023</p>
+        </div>
+        <div class="education-item">
+          <h4>Year Up | New York, NY</h4>
+          <p>Application Development Internship Program, Expected Graduation: May 2026</p>
+        </div>
+      </div>
+      <!-- Skills, Certifications & Interests -->
+      <div class="resume-skills">
+        <h3>Skills, Certifications & Interests</h3>
+        <ul>
+          <li>SEO & SEM Optimization</li>
+          <li>Digital Advertising</li>
+          <li>Content Management Systems (CMS)</li>
+          <li>Data Analysis</li>
+          <li>Social Media Marketing</li>
+          <li>UX/UI Principles</li>
+          <li>Account Management & CRM</li>
+          <li>Team Collaboration & Leadership</li>
+          <li>Problem Solving & Strategic Planning</li>
+          <li>Programming: HTML, CSS, JavaScript, Python</li>
+          <li>Frameworks: Bootstrap, React.js, Node.js</li>
+          <li>Software: Microsoft Office, Google Suite, Figma, Canva, Adobe Photoshop</li>
+          <li>Languages: Soninke (native), English (Fluent), Wolof (Fluent), Mandingo (Fluent), Arabic (Beginner)</li>
+        </ul>
+        <h4>Certifications</h4>
+        <ul>
+          <li>IBM Full Stack Software Developer Professional Certificate</li>
+          <li>Microsoft Office 365 Suite Certificate</li>
+          <li>Foundations of Digital Marketing and E-commerce</li>
+          <li>Google Professional UX Design Certificate</li>
+        </ul>
+        <h4>Interests</h4>
+        <p>Lifelong Learning, Creative Problem Solving, Historical Exploration, New Technologies</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Unchanged from previous version) -->
+  <section id="services" class="services section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="service-cards">
+        <!-- Consulting Calls Card -->
+        <div class="service-card">
+          <h3>Consulting Calls</h3>
+          <p>
+            Looking for help? I often receive messages from Product Managers seeking insights or mentorship. For a 20-minute consulting call ($80), we’ll cover any Product Management topic you choose.
+          </p>
+          <ol>
+            <li>Click “Get Started” below.</li>
+            <li>Book a time with me.</li>
+            <li>Send over the topics you’d like to cover.</li>
+            <li>At the scheduled time, we’ll have our meeting.</li>
+          </ol>
+          <a href="#" class="btn get-started" data-service="Consulting Calls">Get Started</a>
+        </div>
+        <!-- Resume Reviews Card -->
+        <div class="service-card">
+          <h3>Resume Reviews</h3>
+          <p>
+            I offer a Resume Review service tailored for Product Managers. For $99, receive two rounds of comprehensive feedback to ensure your resume stands out.
+          </p>
+          <ol>
+            <li>Click “Get Started” below.</li>
+            <li>Send me your resume.</li>
+            <li>Receive detailed, actionable feedback.</li>
+            <li>Revise and submit for a second review.</li>
+          </ol>
+          <a href="#" class="btn get-started" data-service="Resume Reviews">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let's build something amazing together!</p>
+      <div class="contact-details">
+        <p>Email: <a href="mailto:ousman@example.com">ousman@example.com</a></p>
         <p>Phone: +1 (123) 456-7890</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ousman-tunkara/" target="_blank">LinkedIn</a></p>
-    </section>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ousman-tunkara/" target="_blank">Ousmana Tunkara</a></p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Ousmana Tunkara. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ousmana Tunkara. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- Modal for Service "Get Started" -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title">Service Details</h3>
+      <p id="modal-description">More information will be provided here.</p>
+      <p>Please contact me at <a href="mailto:ousman@example.com">ousman@example.com</a> to get started.</p>
+    </div>
+  </div>
+
+<script src="/scripts/script.js"></script>
 </body>
 </html>
